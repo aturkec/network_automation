@@ -1,0 +1,11 @@
+GNS üzerinde oluşturduğum router üzerinde ssh'ı aktif etme.
+
+öncelikle kullanıcı adı ve şifre oluştur---- username cisco password cisco
+enable şifresi oluştur-----enable 1234
+domain ismi belirler---- ip domain-name domain.com
+verilerin kriptolanmasını sağla---- crypto key generate rsa
+2048 seç
+uzaktan erişim için virtual modu aç ---- line vty 0 4
+verinin taşınması için sshı aktif et----  transport input ssh
+bu kodla veri girişini sağla---- login local
+kaydet ----wr memory
